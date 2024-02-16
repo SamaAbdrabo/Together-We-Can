@@ -67,6 +67,14 @@
         <div class="form-floating mb-3">
           <label for="emailInput">Email:</label>
           <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+          <script>
+            function clearOnEnter(event) {
+              if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("emailInput").value = "";
+              }
+            }
+          </script>
         </div>
       </div>
       <div id="social-buttons">
@@ -82,9 +90,11 @@
       </div>
       <div class="contact">
         <h3>Contact Us!</h3>
-        <p>6 Naser Khesro St.</p>
-        <p>+20110495842</p>
-        <p>+20110498534</p>
+        <ul>
+          <li>6 Naser Khesro St.,</li>
+          <li>+20110495842</li>
+          <li>+20110498534</li>
+        </ul>
       </div>
     </footer>
     <script src="js/texttospeech.js"></script>
