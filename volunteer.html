@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="photos/disability.png">
+      <title>volunter</title>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+
+        @font-face {
+           font-family: serif;
+           src: url(BodoniFLF-Bold.ttf);
+        }
+
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          scroll-behavior: smooth;
+        }
+        p {
+            padding: 10px;
+        }
+
+        html, body{
+          height: 100%;
+          background-color: #eeddbd;
+        }
+
+        .navbar{
+         width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 6%;
+          background-color: #470101;
+          transition: background 1s;
+          position:fixed;
+        }
+        .header {
+          height: 80px;
+        }
+        .navbar:hover {
+          background-color: #000000;
+        }
+
+
+        .logo a {
+          display: flex;
+          align-items: center;
+          font-size: 27px;
+          font-weight: 600;
+          color: #CCCCCE;
+          font-family: serif;
+        }
+
+
+        .pages ul li {
+          display: inline-block;
+          list-style: none;
+          margin: 10px 20px;
+
+        }
+
+        .pages a:hover{
+          color: #71707D;
+        }
+
+        .pages a {
+          color: #CCCCCE;
+          font-size: 22px;
+          font-family: 'Cormorant Infant', serif;
+        }
+
+        .overlay {
+          height: 100%;
+          width: 10;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          background-color: rgba(14, 23, 39, 0.9);
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+
+        .overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 40px;
+        }
+
+        .overlay a {
+          padding: 10px;
+          text-decoration: none;
+          font-size: 36px;
+          font-family: 'Cormorant Infant', serif;
+          color:#eeddbd;
+          display: block;
+         transition: 0.3s;
+        }
+
+
+        .overlay a:hover, .overlay a:focus {
+          color: #71707D;
+        }
+
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+
+        .openbtn div{
+        height: 4px;
+        background-color: #FAF8FF;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: 0.3s;
+        }
+
+        .openbtn{
+          width: 30px;
+          display: block;
+          margin: 1em 0 0 1em;
+        }
+
+        .one{
+          width: 30px;
+        }
+
+        .two{
+          width: 20px
+        }
+
+        .three{
+        width: 25px;
+        }
+
+        .openbtn:hover div{
+          width: 30px;
+          color:#0d0d0d;
+        }
+
+        .body div{
+          background-color: #eeddbd;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+        }
+
+        .body h2{
+          font-size: 50px;
+          font-family: serif;
+          color: #203354;
+          margin: auto;
+          margin-top: 20px;
+
+        }
+
+        .body p{
+          font-family: 'Cormorant Infant', serif;
+          font-size: 20px;
+          border: 1px solid #0E1727;
+          border-radius: 15px;
+          background-color: #152238;
+          color: #EAE9EC;
+          padding: 10px;
+          margin: 10px 100px;
+        }
+
+        .body a{
+          color: #960202;
+          border: 1px solid #71707D;
+          border-radius: 30px;
+          padding: 10px;
+          font-size: 15px;
+          font-family: serif;
+          background-color: #ffffff;
+          margin-top: 10px;
+          width: 100px;
+          margin: auto;
+          transition: 0.5s;
+        }
+
+        .body a:hover{
+          background-color: #203354;
+          color:#EAE9EC;
+        }
+        .body{
+          padding: 1em;
+          text-align: center;
+          margin:6em;
+        }
+        .footer {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            gap: 20px;
+            width: 100%;
+            background-color:#470101;
+            color: white;
+            text-align: center;
+            position: relative;
+            padding:20px;
+            margin-top:50px;
+        }
+        .contact ul{
+          list-style-type: none
+        }
+
+        #social-buttons {
+             text-align: center;
+             margin-top: 20px;
+           }
+
+           #social-buttons img {
+             width: 30px;
+             margin: 0 10px;
+           }
+          .text-to-read {
+               cursor: pointer;
+               display: inline-block;
+           }
+           body {
+               font-family: Arial, sans-serif;
+               text-align: center;
+               margin: 0px;
+           }
+
+
+           .flowchart {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               flex-wrap: wrap;
+           }
+
+           .flowchart-item {
+               position: relative;
+               display: inline-block;
+               margin-top: 30px;
+           }
+           .card{
+             border-radius: 20px;
+             margin-left: 10px;
+             height: 200px;
+             flex: 1;
+             transition: .3s all ease;
+           }
+           .card:hover{
+             flex:2;
+
+           }
+
+           .flowchart-item img {
+
+               width: 140px;
+               height: 140px;
+               border-radius: ;
+               margin-bottom: 10px;
+               transition: opacity 0.3s ease;
+           }
+
+           .flowchart-item h3 {
+               color: #000000;
+               opacity: 0;
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 transition: opacity 0.3s ease;
+              }
+           .flowchart-item:hover img{
+             opacity: 0;
+           }
+           .flowchart-item:hover h3{
+             opacity:1;
+             border-radius: 1px;
+             border-color:00000;
+           }
+
+           .footer {
+               display:grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-gap: 20px;
+               gap: 20px;
+               width: 100%;
+               background-color:#470101;
+               color: white;
+               text-align: center;
+               position: relative;
+               padding:20px;
+               margin-top:50px;
+           }
+
+           .contact ul{
+             list-style-type: none
+           }
+
+           #social-buttons {
+                text-align: center;
+                margin-top: 20px;
+              }
+
+              #social-buttons img {
+                width: 30px;
+                margin: 0 10px;
+              }
+             .text-to-read {
+                  cursor: pointer;
+                  display: inline-block;
+              }
+
+
+
+      </style>
+      <body>
+          <section class="header">
+
+              <nav class="navbar">
+                  <div class="logo">
+                      <logo><a href="index.html">TOGETHER WE CAN</a></logo>
+                  </div>
+                  <div class="pages">
+                      <ul>
+                          <li><a href="about.html">About us</a></li>
+                          <li><a href="resources.html">Resources</a></li>
+                          <li><a href="donate.html">Donate</a></li>
+                          <li><a href="credit.html">Credits</a></li>
+                          <li><a href="register.html">Register</a></li>
+                          <li><a href="volanteer.html">volunter</a></li>
+
+
+                      </ul>
+                  </div>
+                  <div class="menu">
+                      <div id="myNav" class="overlay">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <div class="overlay-content">
+                          </div>
+                      </div>
+                      <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+                          <div class="one"></div>
+                          <div class="two"></div>
+                          <div class="three"></div>
+                      </a>
+                  </div>
+              </nav>
+          </section>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <section>
+              <div class="container flowchart">
+                  <div class="card flowchart-item">
+                      <img src="photos/elderly.png" alt="Step 1">
+                      <h3>You can donate your time by doing part time helping elderly people by doing things for them.</h3>
+                  </div>
+
+                  <div class="arrow arrow-up"></div>
+                  <div class=" card flowchart-item">
+                      <img src="photos/reading-book.png" alt="Step 2">
+                      <h3>You can volunter your time like reading spacific language books like studing books (English,German,Arabic,French),two days per week.</h3>
+                      <p> </p>
+                  </div>
+
+                  <div class="arrow arrow-up"></div>
+                  <div class="card flowchart-item" >
+                      <img src="photos/walking.png" alt="Step 3">
+                      <h3>You can volunter your time by taking a Disablid person for a car ride or for a walk two days per week.</h3>
+                  </div>
+
+                  <div class="card flowchart-item" >
+                      <img src="photos/studying.png" alt="Step 4">
+                      <h3>You can volunter your time by making zoom calls or studing sessions teaching Scientific materials for disabled person two days per week.</h3>
+                  </div>
+
+              </div>
+              <footer class="footer">
+                  <div class="updates">
+                      <h3>Subscribe to our newsletter!</h3>
+                      <br>
+                      <div class="form-floating mb-3">
+                          <label for="emailInput">Email:</label>
+                          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+                          <script>
+                          function clearOnEnter(event) {
+                            if (event.keyCode === 13) {
+                              event.preventDefault();
+                              document.getElementById("emailInput").value = "";
+                            }
+                          }
+                        </script>
+                      </div>
+                  </div>
+                  <div id="social-buttons">
+                      <a href="https://www.facebook.com" target="_blank">
+                          <img src="photos/facebook.png" alt="Facebook">
+                      </a>
+                      <a href="https://youtube.com/@VodafoneEgypt?si=bWTBLdq4R8Q6MjqL" target="_blank">
+                          <img src="photos/youtube.png" alt="youtube">
+                      </a>
+                      <a href="https://www.instagram.com" target="_blank">
+                          <img src="photos/instagram.png" alt="Instagram">
+                      </a>
+                  </div>
+
+                  <div class="contact">
+                      <h3>Contact Us!</h3>
+                      <ul>
+                          <li>6 Naser Khesro St.,</li>
+                          <li>+20110495842</li>
+                          <li>+20110498534</li>
+                      </ul>
+                  </div>
+              </footer>
+              <script src="js/texttospeech.js"></script>
+              <script>
+              var step1 = "Vision Impairment";
+              var step2 = "Deaf or Hard of Hearing";
+              var step3 = "Physical Disability";
+              var step4 = "Intellectual Disability"
+              var step5 = "Mental Health Conditions"
+              </script>
+              <script>
+                  function switchToText(image) {
+                      image.style.display = "none";
+                      var text = image.alt;
+                      var heading = image.nextElementSibling;
+                      heading.style.display = "block";
+                      heading.innerText = text;
+                  }
+          </body>
+        </html>
