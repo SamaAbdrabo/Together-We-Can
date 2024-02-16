@@ -17,7 +17,7 @@ p {
 }
 
 html, body{
-  height: 100%;
+  
   background-color: #eeddbd;
 }
 
@@ -202,6 +202,7 @@ width: 25px;
     padding:20px;
     margin-top:50px;
 }
+
 .contact ul{
   list-style-type: none
 }
