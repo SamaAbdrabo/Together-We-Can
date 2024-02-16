@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+
+@font-face {
+    font-family: serif;
+    src: url(BodoniFLF-Bold.ttf);
+}
+
+body {
+    font-family: 'Cormorant Infant', serif;
+    text-align: center;
+    background-color: #eeddbd
+}
+
+#chat-container {
+    margin-top: 60px;
+}
+
+#chat-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0e9e9;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #470101;
+    color: #fff;
+    cursor: pointer;
+}
+
+#text {
+    text-align: left;
+    font-size: 30px
+}

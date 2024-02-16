@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="photos/disability.png">
+      <link rel="stylesheet" href="css/style.css">
+      <title>TWC</title>
+  </head>
+  <body>
+      <section class="header">
+
+          <nav class="navbar">
+              <div class="logo">
+                  <logo><a href="index.html">TOGETHER WE CAN</a></logo>
+              </div>
+              <div class="pages">
+                  <ul>
+                      <li><a href="about.html">About us</a></li>
+                      <li><a href="resources.html">Resources</a></li>
+                      <li><a href="donate.html">Donate</a></li>
+                      <li><a href="credit.html">Credits</a></li>
+                      <li><a href="register.html">Register</a></li>
+                  </ul>
+              </div>
+              <div class="menu">
+                  <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                      </div>
+                  </div>
+                  <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                      <div class="three"></div>
+                  </a>
+              </div>
+          </nav>
+      </section>
+      <section>
+          <div class="container">
+              <div class="content">
+                  <div class="text-to-read">
+                      <h2>Disability is Human</h2>
+                      <p>Almost everyone will temporarily or permanently experience disability at some point in their life. An estimated 1.3 billion people – about 16% of the global population – currently experience significant disability. This figure is rising as the population ages and noncommunicable diseases become more common.</p>
+                  </div>
+                  <div class="buttons">
+                      <a href="learn1.html" class="button">Learn more</a>
+                      <a href="speechtotext.html" class="button">Speech Command</a>
+                  </div>
+              </div>
+              <div class="image">
+                  <img src="photos/awern.jpg" alt="Big Picture">
+              </div>
+          </div>
+          <br>
+          <hr class="section divider">
+      </section>
+      <br>
+      <br>
+      <section>
+          <h1>Types of Disabilities</h1>
+          <div class="container flowchart">
+              <div class="card flowchart-item">
+                  <img src="photos/eye.png" alt="Step 1">
+                  <h3 >Vision Impairment</h3>
+              </div>
+
+              <div class="arrow arrow-up"></div>
+              <div class=" card flowchart-item">
+                  <img src="photos/sound.png" alt="Step 2">
+                  <h3>Deaf or Hard of Hearing</h3>
+                  <p> </p>
+              </div>
+
+              <div class="arrow arrow-up"></div>
+              <div class="card flowchart-item" >
+                  <img src="photos/dis2.png" alt="Step 3">
+                  <h3>Physical Disability</h3>
+              </div>
+
+              <div class="card flowchart-item" >
+                  <img src="photos/intellectual.png" alt="Step 4">
+                  <h3>Intellectual Disability</h3>
+              </div>
+
+              <div class="card flowchart-item" >
+                  <img src="photos/mental-health.png" alt="Step 5">
+                  <h3>Mental Health Conditions</h3>
+              </div>
+
+          </div>
+          <div>
+            <a href="learn2.html" class="btn">Learn more</a>
+            <br>
+            <br>
+          </div>
+      </section>
+      <div class="container">
+          <div class="duty text-to-read">
+              <h1>Our Duty Towards Society</h1>
+              <p> Some disabilities are visible, such as physical disabilities, and some are hidden; including mental health conditions, medical conditions, learning and cognitive disabilities. </p>
+              <p>We came together to raise awareness of a crucial gap in equity and create a more accessible tool in effort of full inclusion of disabilities within the internet.
+                Through providing a variety of resources, we hope to assist disabled people navigate life and perform to their full potential.
+                </p>
+          </div>
+      </div>
+      <br>
+      <br>
+      <footer class="footer">
+          <div class="updates">
+              <h3>Subscribe to our newsletter!</h3>
+              <br>
+              <div class="form-floating mb-3">
+                  <label for="emailInput">Email:</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+                  <script>
+                  function clearOnEnter(event) {
+                    if (event.keyCode === 13) {
+                      event.preventDefault();
+                      document.getElementById("emailInput").value = "";
+                    }
+                  }
+                </script>
+              </div>
+          </div>
+          <div id="social-buttons">
+              <a href="https://www.facebook.com" target="_blank">
+                  <img src="photos/facebook.png" alt="Facebook">
+              </a>
+              <a href="https://youtube.com/@VodafoneEgypt?si=bWTBLdq4R8Q6MjqL" target="_blank">
+                  <img src="photos/youtube.png" alt="youtube">
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                  <img src="photos/instagram.png" alt="Instagram">
+              </a>
+          </div>
+
+          <div class="contact">
+              <h3>Contact Us!</h3>
+              <ul>
+                  <li>6 Naser Khesro St.,</li>
+                  <li>+20110495842</li>
+                  <li>+20110498534</li>
+              </ul>
+          </div>
+      </footer>
+      <script src="js/texttospeech.js"></script>
+      <script>
+      var step1 = "Vision Impairment";
+      var step2 = "Deaf or Hard of Hearing";
+      var step3 = "Physical Disability";
+      var step4 = "Intellectual Disability"
+      var step5 = "Mental Health Conditions"
+      </script>
+      <script>
+          function switchToText(image) {
+              image.style.display = "none";
+              var text = image.alt;
+              var heading = image.nextElementSibling;
+              heading.style.display = "block";
+              heading.innerText = text;
+          }
+  </body>
+</html>

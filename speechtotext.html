@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/speechtotext.css" rel="stylesheet">
+      <title>Voice Navigation</title>
+      <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+
+          @font-face {
+              font-family: serif;
+              src: url(BodoniFLF-Bold.ttf);
+          }
+
+          body {
+              font-family: 'Cormorant Infant', serif;
+              text-align: center;
+              background-color: #eeddbd
+          }
+
+          #chat-container {
+              margin-top: 60px;
+          }
+
+          #chat-box {
+              width: 80%;
+              margin: 0 auto;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              background-color: #f0e9e9;
+              min-height: 200px;
+              overflow-y: auto;
+          }
+
+          #submit-btn {
+              margin-top: 10px;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              background-color: #470101;
+              color: #fff;
+              cursor: pointer;
+          }
+
+          #text {
+              text-align: left;
+              font-size: 30px
+          }
+      </style>
+  </head>
+
+  <body>
+      <div id="chat-container">
+          <div id="chat-box"></div>
+          <button id="submit-btn">Speak</button>
+          <div id="text">
+              <ul class="text-to-read">
+                  <li>Say <strong>"Go to Home"</strong> to visit the Home page</li>
+                  <li>Say <strong>"Go to About us"</strong> to visit the About us page</li>
+                  <li>Say <strong>"Go to Credits"</strong> to visit the Credits page</li>
+                  <li>Say <strong>"Go to Resources"</strong> to visit the Resources page</li>
+                  <li>Say <strong>"Go to Donations"</strong> to visit the Donations page</li>
+                  <li>Say <strong>"Go to register"</strong> to go to the Register page</li>
+                  <li>Say <strong>"Go to types of disabilities"</strong> to learn more about disabilities</li>
+              </ul>
+          </div>
+
+          <script>
+              function initSpeechRecognition() {
+                  var recognition = new webkitSpeechRecognition();
+                  recognition.lang = 'en-US';
+
+                  recognition.onresult = function(event) {
+                      var command = event.results[0][0].transcript.toLowerCase();
+                      document.getElementById('chat-box').innerHTML += '<div><strong>You:</strong> ' + command + '</div>';
+                      processCommand(command);
+                  };
+
+                  recognition.start();
+              }
+
+
+              function processCommand(command) {
+                  switch (command) {
+                      case "go to home":
+                          window.location.href = "index.html";
+                          break;
+                      case "go to about us":
+                          window.location.href = "about.html";
+                          break;
+                      case "go to credits":
+                          window.location.href = "credit.html";
+                          break;
+                      case "go to resources":
+                          window.location.href = "resources.html";
+                          break;
+                      case "go to register":
+                          window.location.href = "register.html";
+                          break;
+                      case "go to donations":
+                          window.location.href = "donate.html";
+                          break;
+                      case "go to types of disabilities":
+                          window.location.href = "learn2.html";
+                          break;
+
+                      default:
+                          speakText("Command not recognized");
+                  }
+              }
+
+
+              function speakText(text) {
+                  var speech = new SpeechSynthesisUtterance();
+                  speech.lang = 'en-US';
+                  speech.text = text;
+                  window.speechSynthesis.speak(speech);
+              }
+
+
+              document.getElementById('submit-btn').addEventListener('click', function() {
+                  initSpeechRecognition();
+              });
+          </script>
+      </div>
+  </body>
+</html>

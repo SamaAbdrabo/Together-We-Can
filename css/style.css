@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+p {
+    padding: 10px;
+}
+html, body{
+  height: 100%;
+  background-color: #eeddbd;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+
+@font-face {
+   font-family: serif;
+   src: url(BodoniFLF-Bold.ttf);
+}
+p {
+    padding: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+
+.navbar{
+ width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background-color: #470101;
+  transition: background 1s;
+  position:fixed;
+}
+.header {
+  height: 80px;
+}
+.navbar:hover {
+  background-color: #000000;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 600;
+  color: #CCCCCE;
+  font-family: serif;
+}
+.pages ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+.pages a:hover{
+  color: #71707D;
+}
+
+.pages a {
+  color: #CCCCCE;
+  font-size: 22px;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 10;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(14, 23, 39, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: 'Cormorant Infant', serif;
+  color:#eeddbd;
+  display: block;
+ transition: 0.3s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #71707D;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.openbtn div{
+height: 4px;
+background-color: #FAF8FF;
+margin: 5px 0;
+border-radius: 25px;
+transition: 0.3s;
+}
+
+.openbtn{
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+}
+
+.one{
+  width: 30px;
+}
+
+.two{
+  width: 20px
+}
+
+.three{
+width: 25px;
+}
+
+.openbtn:hover div{
+  width: 30px;
+  color:#0d0d0d;
+}
+
+body {
+  padding-top:60px;
+}
+
+.body div{
+  background-color: #eeddbd;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+}
+
+.body h2{
+  font-size: 50px;
+  font-family: serif;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 0px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eeddbd;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    background-color:#eeddbd;
+    padding: 100px;
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    transition-duration: 2s;
+
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    margin-top: 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color:#000000 ;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5c0101;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+.title{
+color: #CCCCCE;
+text-align: center;
+margin-top: 10%;
+}
+
+.title h1{
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.title p{
+font-family: 'Cormorant Infant', serif;
+font-size: 20px;
+line-height: 28px;
+margin-top: 2px;
+}
+
+.links{
+margin-top: 455px;
+text-align: center;
+font-family: 'Cormorant Infant', serif;
+font-size: 20px;
+}
+
+.btn{
+  color: #470101;
+  border: 0.5px solid #CCCCCE;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  color: #EAE9EC;
+  background-color: #203354;
+}
+
+.duty {
+  border: 1px solid #0E1727;
+  border-radius: 20px;
+  background-color: #152238;
+  color: #EAE9EC;
+  padding: 10px;
+  margin:0 ;
+}
+.duty h1{
+  line-height: 120px;
+  font-weight: 2em;
+  font-family: serif;
+  font-weight: bold;
+  color: #black;
+}
+
+.duty p{
+font-family: 'Cormorant Infant', serif;
+color: #black;
+font-size: 1.5em;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+
+.flowchart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flowchart-item {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+.card{
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 200px;
+  flex: 1;
+  transition: .3s all ease;
+}
+.card:hover{
+  flex:2;
+
+}
+
+.flowchart-item img {
+
+    width: 140px;
+    height: 140px;
+    border-radius: ;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.flowchart-item h3 {
+    color: #000000;
+    opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+   }
+.flowchart-item:hover img{
+  opacity: 0;
+}
+.flowchart-item:hover h3{
+  opacity:1;
+  border-radius: 1px;
+  border-color:00000;
+}
+
+.footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    width: 100%;
+    background-color:#470101;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding:20px;
+    margin-top:50px;
+}
+
+.contact ul{
+  list-style-type: none
+}
+
+#social-buttons {
+     text-align: center;
+     margin-top: 20px;
+   }
+
+   #social-buttons img {
+     width: 30px;
+     margin: 0 10px;
+   }
+  .text-to-read {
+       cursor: pointer;
+       display: inline-block;
+   }

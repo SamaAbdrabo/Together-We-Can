@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Types of Disabilities</title>
+    <link rel="icon" type="image/png" href="photos/disability.png">
+    <link href="css/learn2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <logo><a href="index.html">TOGETHER WE CAN</a></logo>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="credit.html">Credits</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            </div>
+          </div>
+          <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <section class="body">
+      <div class="text-to-read">
+        <h2 id="definition">Vision Impairment</h2>
+        <p>Vision impairment refers to people who are blind or who have partial vision.
+
+        When talking with a person who is blind or has a vision impairment:
+        - Always identify yourself and any others with you.
+        - Ask if the person requires assistance and listen for specific instructions, but be prepared for your offer to be refused.
+        - If guiding a person, let them take your arm instead of taking theirs. Describe any changes in the environment, such as steps or obstacles.
+        - If the person has a guide dog, please remember that the dog is working and should not be patted, fed, or distracted.</p>
+      </div>
+      <div class="text-to-read">
+        <h2 id="symptoms">Deaf or Hard of Hearing</h2>
+        <p>Hearing impairments can range from mild to profound. People who are hard of hearing may use a range of strategies and equipment, including speech, lip-reading, writing notes, hearing aids, or sign language interpreters.
+
+        When talking to a person who is deaf or hard of hearing:
+        - Look and speak directly to them, not just to the people accompanying them, including interpreters.
+        - Speak clearly and use a normal tone of voice unless otherwise instructed by the person with the hearing impairment.
+        - If you don't understand what a person is saying, ask them to repeat or rephrase, or alternatively offer them a pen and paper.</p>
+      </div>
+      <div class="text-to-read">
+        <h2 id="cure">Physical Disability</h2>
+        <p>The common characteristic in physical disability is that some aspect of a person's physical functioning, usually either their mobility, dexterity, or stamina, is affected. People with physical disabilities are usually experts in their own needs and will understand the impact of their disability.
+
+        There are many different kinds of disabilities and a wide variety of situations people experience. The disability may be permanent or temporary. It may exist from birth or be acquired later in life. People with the same disability are as likely as anyone else to have different abilities.</p>
+      </div>
+
+      <div class="text-to-read">
+        <h2 id="cause">Intellectual Disability</h2>
+        <p>A person with an intellectual disability may have significant limitations in the skills needed to live and work in the community, including difficulties with communication, self-care, social skills, safety, and self-direction.
+
+        The most important thing to remember is to treat each person as an individual:
+         -A person with an intellectual disability is just like everyone else, so treat them as you would like to be treated.
+        - Be considerate of the extra time it might take for a person with an intellectual disability to do or say something.
+        - Be patient and give your undivided attention, especially with someone who speaks slowly or with great effort.</p>
+      </div>
+      <div class="text-to-read">
+        <h2 id="progress">Mental Health Conditions</h2>
+        <p>Mental illness is a general term for a group of illnesses that affect the mind or brain. These illnesses, which include bipolar disorder, depression, schizophrenia, anxiety, and personality disorders, affect the way a person thinks, feels, and acts.
+
+        A person with a mental health condition may experience difficulty concentrating, which can sometimes be a result of medication. Try to avoid overly stressful situations whenever possible so that their condition is not exacerbated.</p>
+      </div>
+    </section>
+    <div class="question">
+      <p>Ready to test your knowledge? Take a test <a href="https://cap-able.com/disability-inclusion-quiz/">HERE</a>.</p>
+    </div>
+    <footer class="footer">
+      <div class="updates">
+        <h3>Subscribe to our newsletter!</h3>
+        <br>
+        <div class="form-floating mb-3">
+          <label for="emailInput">Email:</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+          <script>
+            function clearOnEnter(event) {
+              if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("emailInput").value = "";
+              }
+            }
+          </script>
+        </div>
+      </div>
+      <div id="social-buttons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="photos/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://youtube.com/@VodafoneEgypt?si=bWTBLdq4R8Q6MjqL" target="_blank">
+          <img src="photos/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="photos/instagram.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="contact">
+        <h3>Contact Us!</h3>
+        <ul>
+          <li>6 Naser Khesro St.,</li>
+          <li>+20110495842</li>
+          <li>+20110498534</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/texttospeech.js"></script>
+  </body>
+</html>

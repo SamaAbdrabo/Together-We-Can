@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/learn1.css">
+    <link rel="icon" type="image/png" href="photos/disability.png">
+    <title>Disability</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <logo><a href="index.html">TOGETHER WE CAN</a></logo>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="credit.html">Credits</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content"></div>
+          </div>
+          <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="body text-to-read">
+        <h3>A disability refers to a condition of the body or mind that creates challenges for individuals when performing certain activities and interacting with the world. People with disabilities comprise a diverse group with varying needs. Not all disabilities are immediately visible, and two individuals with the same disability may experience it differently.</h3>
+        <h3>Disability can be:</h3>
+        <ul>
+          <li>Developmental conditions that appear in childhood, such as autism spectrum disorder and ADHD.</li>
+          <li>Intermittent disabilities like certain forms of multiple sclerosis.</li>
+          <li>Progressive disabilities like muscular dystrophy.</li>
+          <li>Static disabilities like limb loss.</li>
+          <li>Disabilities resulting from long-standing conditions such as diabetes, which can lead to complications like vision loss, nerve damage, or limb loss.</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="updates">
+        <h3>Subscribe to our newsletter!</h3>
+        <br>
+        <div class="form-floating mb-3">
+          <label for="emailInput">Email:</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+          <script>
+            function clearOnEnter(event) {
+              if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("emailInput").value = "";
+              }
+            }
+          </script>
+        </div>
+      </div>
+      <div id="social-buttons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="photos/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://youtube.com/@VodafoneEgypt?si=bWTBLdq4R8Q6MjqL" target="_blank">
+          <img src="photos/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="photos/instagram.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="contact">
+        <h3>Contact Us!</h3>
+        <ul>
+          <li>6 Naser Khesro St.,</li>
+          <li>+20110495842</li>
+          <li>+20110498534</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/texttospeech.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="photos/disability.png">
+    <title>resources</title>
+    <link rel="stylesheet" href="css/donate.css">
+  </head>
+  <body>
+    <section class="header">
+     <nav class="navbar">
+       <div class="logo">
+          <logo><a href="index.html">TOGETHER WE CAN</a></logo>
+       </div>
+       <div class="pages">
+         <ul>
+           <li><a href="about.html">About us</a></li>
+           <li><a href="resources.html">Resources</a></li>
+           <li><a href="donate.html">Donate</a></li>
+           <li><a href="credit.html">Credits</a></li>
+           <li><a href="register.html">Register</a></li>
+         </ul>
+       </div>
+       <div class="menu">
+         <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-content">
+           </div>
+         </div>
+         <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+           <div class="one"></div>
+           <div class="two"></div>
+           <div class="three"></div>
+         </a>
+       </div>
+     </nav>
+    </section>
+
+    <section class="body">
+      <div>
+        <div class="text-to-read">
+          <h2>Therapy Sessions</h2>
+          <p>Beginning therapy can be a big step towards being the healthiest version of yourself and living the life to the fullest. It is believed that no matter what challenges one may be facing, it can be resolved. A good therapy session caters to change self-destructive behaviors and habits, resolve painful feelings.</p>
+        </div>
+        <a href="https://etherapypro.com/">view link</a>
+      </div>
+      <div>
+        <div class="text-to-read">
+          <h2>Bookshare</h2>
+          <p>Bookshare is a platform that offers customizable reading experiences and a wide range of books for individuals with reading barriers, such as dyslexia, blindness, and cerebral palsy.</p>
+        </div>
+        <a href="https://www.openculture.com/freeaudiobooks">View link</a>
+      </div>
+      <div>
+        <div class="text-to-read">
+          <h2>Free Audiobooks</h2>
+          <p>Audiobooks have the power to boost our moods and disrupt negative thinking patterns. Psychology Today notes that for "those of us prone to anxiety and depression... listening to someone else read aloud can help by replacing negative thoughts with something else."</p>
+        </div>
+        <a href="https://www.openculture.com/freeaudiobooks">View link</a>
+      </div>
+      <div>
+        <div class="text-to-read">
+          <h2>Autism Learning Resources</h2>
+          <p>Activities to practice everything from math and reading to social and communication skills.</p>
+        </div>
+        <a href="https://www.freeautismresources.org/autism-resources/">View link</a>
+      </div>
+      <div>
+        <div class="text-to-read">
+          <h2>ChatGPT</h2>
+          <p>ChatGPT is a powerful AI chatbot that can answer a wide range of questions and provide cohesive explanations on various topics. It has practical applications such as creating customized resumes, crafting jokes, explaining complex topics, solving math problems, and providing relationship advice.</p>
+        </div>
+        <a href="https://chat.openai.com/">view link</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="updates">
+            <h3>Subscribe to our newsletter!</h3>
+            <br>
+            <div class="form-floating mb-3">
+                <label for="emailInput">Email:</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" onkeydown="clearOnEnter(event)">
+                <script>
+                    function clearOnEnter(event) {
+                      if (event.keyCode === 13) {
+                        event.preventDefault();
+                        document.getElementById("emailInput").value = "";
+                      }
+                    }
+                </script>
+            </div>
+        </div>
+        <div id="social-buttons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="photos/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/@VodafoneEgypt?si=bWTBLdq4R8Q6MjqL" target="_blank">
+                <img src="photos/youtube.png" alt="youtube">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="photos/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us!</h3>
+            <ul>
+                <li>6 Naser Khesro St.,</li>
+                <li>+20110495842</li>
+                <li>+20110498534</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/texttospeech.js"></script>
+  </body>
+</html>
